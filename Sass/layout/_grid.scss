@@ -1,3 +1,4 @@
+
 .container {
   max-width: $grid-width;
   padding: 0 3.2rem;
@@ -30,12 +31,16 @@
   }
 
   &__about {
-    column-gap: 6rem;
+    column-gap: $default-column-gap;
   }
 
   &__features {
     max-width: 138rem;
-    column-gap: 6rem;
+    column-gap: $default-column-gap;
+  }
+
+  &__tours {
+   column-gap: $default-column-gap;
   }
 
 
