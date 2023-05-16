@@ -1,0 +1,45 @@
+.container {
+  max-width: $grid-width;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  margin: 0 auto;
+
+  &--2-cols {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &--center-v {
+    align-items: center;
+  }
+
+  &__about {
+    column-gap: 6rem;
+  }
+
+  &__features {
+    max-width: 138rem;
+    column-gap: 6rem;
+  }
+
+
+}
+
+
+
