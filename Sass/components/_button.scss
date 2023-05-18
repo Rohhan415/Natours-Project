@@ -1,7 +1,9 @@
 .btn {
+  &,
   &:link,
   &:visited {
     position: relative;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 10rem;
@@ -29,13 +31,23 @@
 
 
   &--white {
-    display: inline-block;
-    background-color: #ffff;
-    color: #777777;
+    background-color: $color-white;
+    color: $color-grey-dark;
     padding: 1.5rem 4rem;
 
     &::after {
-      background-color: #ffff;
+      background-color: $color-white;
+
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color:$color-white;
+    padding: 1.5rem 4rem;
+
+    &::after {
+      background-color: $color-primary;
 
     }
   }
