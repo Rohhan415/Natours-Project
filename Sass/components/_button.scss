@@ -44,7 +44,7 @@
   &--green {
     background-color: $color-primary;
     color:$color-white;
-    padding: 1.5rem 4rem;
+    padding: 2.5rem 5rem;
 
     &::after {
       background-color: $color-primary;
@@ -87,6 +87,7 @@
     box-shadow: inset 0 -2px  0 $color-primary;
     padding: 0.5rem 0.8rem;
     transition: color .3s ease-in-out, box-shadow .3s;
+
   }
 
 
@@ -101,4 +102,6 @@
   &:active {
     transform: translateY(-2px);
   }
+
+
 }

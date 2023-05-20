@@ -5,7 +5,7 @@
   // Functionality
   position: relative;
   perspective: 150rem;
-  height: 50rem;
+  height: 60rem;
 
 
   &__side {
@@ -15,7 +15,7 @@
     width: 100%;
     backface-visibility: hidden;
     background-color: orange;
-    height: 50rem;
+    height: 60rem;
     transition: all .8s ease;
     border-radius: 3px;
     overflow: hidden;
@@ -127,7 +127,7 @@
   }
 
   &__details {
-
+    padding: 4rem;
     ul {
       list-style: none;
       width: 80%;
@@ -135,7 +135,7 @@
 
       li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 1rem;
 
         &:not(:last-child) {
