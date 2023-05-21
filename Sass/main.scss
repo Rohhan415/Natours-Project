@@ -2,6 +2,7 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+
 @import "base/base";
 @import "base/animations";
 @import "base/typograpghy";
@@ -15,11 +16,16 @@
 @import "components/feature-box";
 @import "components/card";
 @import "components/story";
+@import "components/bg-video";
+@import "components/form";
 
 @import "layout/header";
 @import "layout/grid";
 
+//TODO Change imports to use and forward(change architecture for it?)
+//TODO change border-radius values for one universal variable
 
+//@use "abstracts/abstractIndex" as *;
 
 
 
