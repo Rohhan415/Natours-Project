@@ -634,6 +634,9 @@ body {
 .grid--center-v {
   align-items: center;
 }
+.grid__footer {
+  column-gap: 6rem;
+}
 .grid__about {
   column-gap: 6rem;
 }
@@ -644,6 +647,43 @@ body {
 .grid__tours {
   max-width: 140rem;
   column-gap: 6rem;
+}
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+}
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.footer__logo {
+  width: 15rem;
+  height: auto;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__item {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+}
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer__link:link, .footer__link:visited {
+  display: inline-block;
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  transform: rotate(5deg) scale(1.3);
 }
 
 /*# sourceMappingURL=main.css.map */

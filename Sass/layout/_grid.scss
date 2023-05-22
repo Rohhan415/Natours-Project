@@ -10,7 +10,6 @@
   margin: 0 auto;
 
   &--2-cols {
-
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -30,6 +29,10 @@
     align-items: center;
   }
 
+  &__footer {
+    column-gap: $default-column-gap;
+  }
+
   &__about {
     column-gap: $default-column-gap;
   }
@@ -41,7 +44,7 @@
 
   &__tours {
     max-width: 140rem;
-   column-gap: $default-column-gap;
+    column-gap: $default-column-gap;
   }
 
 
