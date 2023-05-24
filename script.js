@@ -1,3 +1,11 @@
+'use strict'
+
+
+
+
+
+
+
 window.onbeforeunload = function() {
     window.scrollTo(0, window.pageYOffset || document.documentElement.scrollTop);
 };
