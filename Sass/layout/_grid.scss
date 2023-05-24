@@ -31,10 +31,14 @@
 
   &__footer {
     column-gap: $default-column-gap;
+    max-width: 152rem;
   }
 
   &__about {
     column-gap: $default-column-gap;
+    max-width: none;
+    width: 136.8rem;
+
   }
 
   &__features {
@@ -45,6 +49,7 @@
   &__tours {
     max-width: 140rem;
     column-gap: $default-column-gap;
+
   }
 
 

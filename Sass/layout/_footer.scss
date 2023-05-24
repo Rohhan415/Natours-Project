@@ -1,10 +1,11 @@
 .footer {
   background-color: $color-grey-dark-3;
   padding: 10rem 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 
   &__logo-box {
     text-align: center;
+    height: 16rem;
     margin-bottom: 8rem;
   }
 
@@ -15,23 +16,23 @@
 
   &__navigation {
 
+    display: inline-block;
   }
 
   &__list {
     list-style: none;
+
   }
 
   &__item {
-    display: grid;
-    grid-auto-flow:column;
-    text-align: center;
+    display: inline-flex;
+    gap: 2.5rem;
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
 
 
 
-  }
 
-  &__item:not(:last-child) {
-    margin-right:1.5rem ;
   }
 
 
@@ -39,9 +40,11 @@
     &:link,
     &:visited {
       display: inline-block;
+      background-color: $color-grey-dark-3;
       color: $color-grey-light-1;
       text-decoration: none;
       text-transform: uppercase;
+      transition: all .2s;
 
     }
 
@@ -56,7 +59,28 @@
   }
 
   &__copyright {
+    color: $color-grey-light-1;
+    width: 80%;
+    margin-left: 15%;
 
+    &-box {
+      border-top: 1px solid $color-grey-dark-1;
+      padding-top: 2rem;
+    }
+
+    &-heading {
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+    }
+
+    &-contacts {
+      text-transform: uppercase;
+    }
   }
+
+  &__address {
+    margin-bottom: 1.4rem;
+  }
+
 
 }
