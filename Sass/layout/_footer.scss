@@ -15,21 +15,27 @@
   }
 
   &__navigation {
+    display: inline-flex;
 
-    display: inline-block;
+
   }
 
   &__list {
+
     list-style: none;
+
 
   }
 
   &__item {
     display: inline-flex;
-    gap: 2.5rem;
+    gap: 3.4rem;
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
 
+    @include respond(big-desktop) {
+      gap: 5rem;
+    }
 
 
 
@@ -60,8 +66,7 @@
 
   &__copyright {
     color: $color-grey-light-1;
-    width: 80%;
-    margin-left: 15%;
+
 
     &-box {
       border-top: 1px solid $color-grey-dark-1;

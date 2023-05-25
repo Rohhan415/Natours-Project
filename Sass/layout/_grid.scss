@@ -3,6 +3,10 @@
   max-width: $grid-width;
   padding: 0 3.2rem;
   margin: 0 auto;
+
+  &__footer {
+    max-width: 162rem;
+  }
 }
 
 .grid {
@@ -11,6 +15,8 @@
 
   &--2-cols {
     grid-template-columns: repeat(2, 1fr);
+
+
   }
 
   &--3-cols {
@@ -29,15 +35,28 @@
     align-items: center;
   }
 
+  &__same-width {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   &__footer {
-    column-gap: $default-column-gap;
-    max-width: 152rem;
+
+    grid-template-rows: repeat(2, 1fr); ;
+
+    &-details {
+      column-gap: 25rem;
+      max-width: 132rem;
+      @include respond(big-desktop) {
+        column-gap: 12rem;
+      }
+    }
+
   }
 
   &__about {
     column-gap: $default-column-gap;
-    max-width: none;
-    width: 136.8rem;
+
+    max-width: 136.8rem;
 
   }
 
