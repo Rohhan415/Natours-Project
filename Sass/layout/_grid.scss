@@ -39,15 +39,30 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  &__contact {
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__footer {
 
-    grid-template-rows: repeat(2, 1fr); ;
+    grid-template-rows: repeat(2, 1fr);
+
+
 
     &-details {
       column-gap: 25rem;
       max-width: 132rem;
       @include respond(big-desktop) {
         column-gap: 12rem;
+      }
+
+      @include respond(tab-land) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 5rem;
+        justify-content: center;
+
       }
     }
 
@@ -63,11 +78,24 @@
   &__features {
     max-width: 138rem;
     column-gap: $default-column-gap;
+    @include  respond(tab-land) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 6rem;
+    }
+
   }
 
   &__tours {
     max-width: 140rem;
     column-gap: $default-column-gap;
+    @include respond(tab-port) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 5rem;
+
+  }
+
 
   }
 

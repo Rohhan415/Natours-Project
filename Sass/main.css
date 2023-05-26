@@ -29,7 +29,7 @@ body {
   box-sizing: border-box;
   padding: 3rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 79.4em) {
   body {
     padding: 0;
   }
@@ -91,12 +91,23 @@ body {
   letter-spacing: 3.5rem;
   animation: moveInLeft 1s ease-out;
 }
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.8rem;
   animation: moveInRight 1s ease-out;
+}
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
 }
 
 .heading-secondary {
@@ -331,6 +342,11 @@ body {
 .polygon-bottom {
   -webkit-clip-path: polygon(0 9.5rem, 100% 0, 100% 65rem, 0 100%);
   clip-path: polygon(0 9.5rem, 100% 0, 100% 65rem, 0 100%);
+}
+@media (max-width: 79.4em) {
+  .polygon-bottom {
+    clip-path: polygon(0 9.4rem, 100% 0, 100% 94rem, 0 100%);
+  }
 }
 
 .card {
@@ -735,6 +751,9 @@ body {
 .grid__same-width {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid__contact {
+  grid-template-columns: repeat(1, 1fr);
+}
 .grid__footer {
   grid-template-rows: repeat(2, 1fr);
 }
@@ -747,6 +766,14 @@ body {
     column-gap: 12rem;
   }
 }
+@media (max-width: 79.4em) {
+  .grid__footer-details {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 5rem;
+    justify-content: center;
+  }
+}
 .grid__about {
   column-gap: 6rem;
   max-width: 136.8rem;
@@ -755,9 +782,23 @@ body {
   max-width: 138rem;
   column-gap: 6rem;
 }
+@media (max-width: 79.4em) {
+  .grid__features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 6rem;
+  }
+}
 .grid__tours {
   max-width: 140rem;
   column-gap: 6rem;
+}
+@media (max-width: 56.25em) {
+  .grid__tours {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+  }
 }
 
 .footer {
@@ -776,6 +817,11 @@ body {
 }
 .footer__navigation {
   display: inline-flex;
+}
+@media (max-width: 79.4em) {
+  .footer__navigation {
+    justify-content: center;
+  }
 }
 .footer__list {
   list-style: none;

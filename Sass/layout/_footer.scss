@@ -17,6 +17,11 @@
   &__navigation {
     display: inline-flex;
 
+    @include respond(tab-land) {
+      justify-content: center;
+
+    }
+
 
   }
 
