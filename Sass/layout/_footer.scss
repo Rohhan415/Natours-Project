@@ -4,18 +4,41 @@
   font-size: 1.8rem;
 
   &__logo-box {
+
     text-align: center;
+
     height: 16rem;
-    margin-bottom: 8rem;
+    margin-right: 6rem;
+    margin-bottom: 5rem;
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 0;
+
+    }
   }
 
   &__logo {
     width: 15rem;
     height: auto;
+    justify-content: center;
+
   }
 
   &__navigation {
-    display: inline-flex;
+    display: flex;
+
+    @include respond(big-desktop) {
+      justify-content: center;
+
+    }
+
+    @include respond(medium-desktop) {
+      grid-column: span 2;
+
+
+    }
 
     @include respond(tab-land) {
       justify-content: center;
@@ -41,6 +64,12 @@
     @include respond(big-desktop) {
       gap: 5rem;
     }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
 
 
 
@@ -69,12 +98,21 @@
 
   }
 
+
   &__copyright {
+    display: flex;
     color: $color-grey-light-1;
+    justify-content: flex-end;
+
+    @include respond(medium-desktop) {
+      grid-column: span 2;
+      flex-direction: column;
+      padding-top: 4rem;
+    }
 
 
     &-box {
-      border-top: 1px solid $color-grey-dark-1;
+      border-top: .1rem solid $color-grey-dark-1;
       padding-top: 2rem;
     }
 
@@ -85,11 +123,13 @@
 
     &-contacts {
       text-transform: uppercase;
+
     }
   }
 
   &__address {
     margin-bottom: 1.4rem;
+    white-space: break-spaces;
   }
 
 

@@ -13,7 +13,6 @@ body {
   margin-bottom: 6rem;
 
 
-
   &--main {
     display: block;
     font-size: 6rem;
@@ -21,9 +20,18 @@ body {
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out;
 
-    @include respond(phone) {
-    letter-spacing: 1rem;
+    @include respond(tab-port) {
+      letter-spacing: 1.5rem;
       font-size: 5rem;
+    }
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4.5rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 2rem;
     }
 
 
@@ -37,9 +45,21 @@ body {
     letter-spacing: 1.8rem;
     animation: moveInRight 1s ease-out;
 
-    @include respond(phone) {
-      letter-spacing: .5rem;
+    @include respond(tab-port) {
+      letter-spacing: 1rem;
+      font-size: 2rem;
     }
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone-small) {
+      letter-spacing: .5rem;
+      font-size: 1rem;
+    }
+
 
   }
 
@@ -57,9 +77,24 @@ body {
   transition: all .2s;
   letter-spacing: .2rem;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   &:hover {
     transform: skewY(2deg) skewX(-15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  }
+
+  &--footer {
+    @include respond(tab-port) {
+      display: inline-flex;
+      align-items: center;
+      grid-column: span 2;
+    }
   }
 }
 
