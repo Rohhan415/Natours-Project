@@ -15,6 +15,7 @@
   }
 
   @include respond(tab-port) {
+    width: 100%;
     transform: skewX(0);
   }
 
@@ -36,6 +37,10 @@
       height: 11rem;
       float: none;
       transform: translateX(-.9rem)  skewX(0);
+    }
+
+    @include respond(phone) {
+      transform: translateX(.1rem);
     }
 
 

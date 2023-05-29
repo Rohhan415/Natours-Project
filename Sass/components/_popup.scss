@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -15,8 +16,11 @@
 
 
   &__content {
+    position: relative;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+
+
     gap: 6rem;
     width: 75%;
     background-color: $color-white;
@@ -30,12 +34,31 @@
   }
 
   &__left {
-    width: 33.3%
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    width: 33.3%;
+
+
+    @include respond(big-desktop) {
+      display: none;
+    }
+
+
+
   }
 
   &__right {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    width: 66.6%
+    width: 66.6%;
+    @include respond(big-desktop) {
+      width: 100%;
+
+    }
   }
 
   &__img {
@@ -44,7 +67,8 @@
   }
 
   &__text {
-    font-size: 1.4rem;
+
+    font-size: 1.8rem;
     margin-bottom: 4rem;
     padding-right: 6rem;
 
@@ -60,6 +84,24 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+
+    @include respond(big-desktop) {
+      font-size: 1rem;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 0.7rem;
+    }
+
+    @include respond(phone-small) {
+      font-size: 1.4rem;
+      column-count: 1;
+      align-items: center;
+    }
+
   }
 
   &:target {
@@ -77,12 +119,30 @@
     &:visited {
       display: inline-block;
       position: absolute;
-      top: -4.5rem;
+      top: 2.5rem;
       right: 2.5rem;
       font-size: 4rem;
       color: $color-grey-dark-1;
       text-decoration: none;
       line-height: 1;
+      z-index: 8888;
+
+      @include respond(tab-port) {
+        top: 3.5rem;
+        right: 0.5rem;
+        font-size: 3rem;
+      }
+
+      @include respond(phone) {
+        top: 3rem;
+        right: 1rem;
+        font-size: 3rem;
+      }
+      @include respond(phone-small) {
+        top: .5rem;
+        right: 1rem;
+        font-size: 3rem;
+      }
 
 
     }
@@ -93,3 +153,15 @@
 
   }
 }
+
+.btn__container {
+  margin-bottom: 1rem;
+
+  @include respond(big-desktop) {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+}
+
