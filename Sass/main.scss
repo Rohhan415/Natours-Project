@@ -11,6 +11,7 @@
 
 @import "pages/home";
 
+
 @import "components/button";
 @import "components/compositon";
 @import "components/feature-box";
@@ -24,10 +25,6 @@
 @import "layout/grid";
 @import "layout/footer";
 @import "layout/navigation";
-
-// Change imports to use and forward(change architecture for it?)
-// change border-radius values for one universal variable
-//@use "abstracts/abstractIndex" as *;
 
 
 
