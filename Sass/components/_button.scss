@@ -15,11 +15,11 @@
     border: none;
     cursor: pointer;
 
+
     @include respond(phone-small) {
       padding: 1rem 2rem;
       font-size: 1.2rem;
     }
-
   }
 
 
@@ -27,6 +27,7 @@
    {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -49,13 +50,11 @@
     padding: 1.5rem 4rem;
 
 
-
-
     &::after {
       background-color: $color-white;
-
     }
   }
+
 
   &--green {
     background-color: $color-primary;
@@ -63,22 +62,20 @@
     padding: 1.5rem 4rem;
 
 
-
     &-form {
-
       @include respond(phone-small) {
         margin-top: 2rem;
       }
-
     }
+
 
     &-1 {
       padding: 2.5rem 5rem;
     }
 
+
     &::after {
       background-color: $color-primary;
-
     }
   }
 
@@ -94,7 +91,6 @@
     border-radius: 10rem;
     z-index: -1;
     transition: all .4s;
-
   }
 
 
@@ -117,7 +113,6 @@
     box-shadow: inset 0 -2px 0 $color-primary;
     padding: 0.5rem 0.8rem;
     transition: color .3s ease-in-out, box-shadow .3s;
-
   }
 
 
@@ -132,6 +127,4 @@
   &:active {
     transform: translateY(-2px);
   }
-
-
 }

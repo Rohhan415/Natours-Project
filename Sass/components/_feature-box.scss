@@ -8,6 +8,7 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: all .3s;
 
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -16,29 +17,30 @@
     color: transparent;
   }
 
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
+
 
   &__text {
 
   }
 }
 
+
 .polygon-bottom {
   -webkit-clip-path: polygon(0 9.5rem, 100% 0, 100% 65rem, 0 100%);
   clip-path: polygon(0 9.5rem, 100% 0, 100% 65rem, 0 100%);
+
 
   @include respond(medium-desktop) {
     clip-path: polygon(0 9.5rem, 100% 0, 100% 77rem, 0 100%);
   }
 
+
   @include respond(tab-land) {
     clip-path: none;
   }
-
-
-
-
 }
 

@@ -1,9 +1,11 @@
 
 .navigation {
 
+
   &__checkbox {
     display: none;
   }
+
 
   &__button {
     display: flex;
@@ -31,7 +33,6 @@
       top: 3rem;
       right: 2rem;
     }
-
   }
 
 
@@ -49,10 +50,6 @@
     width: 100%;
     z-index: 1500;
     transition: 0.5s cubic-bezier(0.86, 0, 0.07, 1)
-
-
-
-
   }
 
   &__list {
@@ -60,9 +57,11 @@
     opacity: 1;
   }
 
+
   &__item {
     margin: 1rem;
   }
+
 
   &__link {
     &:link,
@@ -78,12 +77,13 @@
       background-size: 230%;
       transition: all .4s;
 
+
       span {
         margin-right: 1.5rem;
         display: inline-block;
       }
-
     }
+
 
     &:hover,
     &:active {
@@ -94,9 +94,11 @@
     }
   }
 
+
   &__checkbox:checked ~ &__nav {
     transform: translateX(0);
   }
+
 
   &__icon {
     position: relative;
@@ -112,8 +114,8 @@
       @include respond(phone) {
         width: 2rem;
       }
-
     }
+
 
     &:before,
     &:after {
@@ -122,41 +124,42 @@
       transition: all .2s;
     }
 
+
     &::before {
-
-
-
       top: -.8rem;
     }
 
+
     &::after {
-
-
-
       top: .8rem;
     }
 
   }
 
+
   &__button:hover &__icon::before {
     top: -1rem;
   }
+
 
   &__button:hover &__icon::after {
     top: 1rem;
   }
 
+
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
   }
+
+
   &__checkbox:checked + &__button &__icon:before {
     top:0;
     transform: rotate(135deg);
   }
+
+
   &__checkbox:checked + &__button &__icon:after {
     top:0;
     transform: rotate(-135deg);
   }
-
-
 }

@@ -33,6 +33,7 @@
     transform: translateX(-3rem) skewX(12deg);
     border-radius: 50%;
     overflow: hidden;
+
     @include respond(tab-port) {
       width: 11rem;
       height: 11rem;
@@ -43,21 +44,19 @@
     @include respond(phone) {
       transform: translateX(.1rem);
     }
-
-
   }
 
-  &__img {
 
+  &__img {
     display: inline-block;
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s;
+
     @include respond(phone) {
-
     }
-
   }
+
 
   &__text {
     transform: skewX(12deg);
@@ -65,6 +64,7 @@
       transform:  skewX(0);
     }
   }
+
 
   &__caption {
     position: absolute;
@@ -81,14 +81,15 @@
     backface-visibility: hidden;
   }
 
+
   &:hover &__caption {
     opacity: 1;
     transform:translate(-50%, -50%);
   }
 
+
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
   }
-
 }
