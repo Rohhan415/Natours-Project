@@ -107,6 +107,12 @@
 
 
   &__radio-button {
+    @include respond(phone-small) {
+      top: -.6rem;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
     display: inline-block;
     position: absolute;
     left: 0;
@@ -116,11 +122,8 @@
     border: 5px solid $color-primary;
     border-radius: 50%;
 
-    @include respond(phone-small) {
-      top: -.6rem;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
+
+
 
 
     &::after {
@@ -135,6 +138,7 @@
       transform: translate(-50%, -50%);
       background-color: $color-primary;
       transition: opacity .2s;
+      opacity: 0;
     }
   }
 
